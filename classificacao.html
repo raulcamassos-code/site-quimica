@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação | Óxidos</title>
+    <link rel="stylesheet" href="style (5).css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index (5).html">Início</a>
+        <a href="historia (4).html">História</a>
+        <a href="classificacao.html">Classificação</a>
+        <a href="aplicacoes.html">Aplicações</a>
+        <a href="quiz (6).html">Quiz</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <section>
+                <h2>Classificação dos Óxidos</h2>
+            <div class="destaque-inicio">
+                <img src="imagem/classificação.png" alt="óxidos básicos e óxidos ácidos" width="250">
+                <div class="texto-destaque">
+                    <h3>Como classificar um óxido</h3>
+                    <p>A classificação depende de como o óxido se comporta ao reagir com água, ácidos e bases. Em geral, os óxidos de metais são básicos e os de ametais são ácidos.</p>
+                </div>
+            </div>
+
+            <div class="blocos-guerra">
+                <button class="bloco-guerra" onclick="mostrarBlocoGuerra('eixo')">
+                    <h3>Óxidos básicos</h3>
+                    <p>Formados por metais</p>
+                    <span>Clique para saber mais</span>
+                </button>
+                <div class="seta-guerra">↔</div>
+                <button class="bloco-guerra" onclick="mostrarBlocoGuerra('aliados')">
+                    <h3>Óxidos ácidos</h3>
+                    <p>Formados por ametais</p>
+                    <span>Clique para saber mais</span>
+                </button>
+            </div>
+
+            <div id="eixo" class="conteudo-guerra">
+                <h3>Óxidos básicos</h3>
+                    <p>São formados por metais, como sódio, potássio, cálcio e magnésio (Na₂O, K₂O, CaO, MgO). Têm ligação iônica e são sólidos à temperatura ambiente.</p>
+
+                    <p>Reagem com água formando bases (CaO + H₂O → Ca(OH)₂) e com ácidos formando sal e água (CaO + 2 HCl → CaCl₂ + H₂O).</p>
+            </div>
+
+            <div id="aliados" class="conteudo-guerra">
+                <h3>Óxidos ácidos</h3>
+                    <p>São formados por ametais, como carbono, enxofre e nitrogênio (CO₂, SO₂, SO₃, N₂O₅). Têm ligação covalente e são moleculares.</p>
+
+                    <p>Reagem com água formando ácidos (SO₃ + H₂O → H₂SO₄) e com bases formando sal e água (CO₂ + 2 NaOH → Na₂CO₃ + H₂O).</p>
+            </div>
+
+            <div class="linha-tempo">
+                <h3>Passo a passo</h3>
+                <div class="anos">
+                    <button onclick="mostrarAno('ano1939', this)">Passo 1</button>
+                    <button onclick="mostrarAno('ano1941', this)">Passo 2</button>
+                    <button onclick="mostrarAno('ano1942', this)">Passo 3</button>
+                    <button onclick="mostrarAno('ano1944', this)">Passo 4</button>
+                </div>
+                <div id="ano1939" class="evento">
+                    <h4>Passo 1 - Dê o nome ao óxido</h4>
+                    <p>Use “óxido de” + nome do elemento. Exemplos: Na₂O é óxido de sódio; CO₂ é dióxido de carbono. Quando o elemento tem mais de um Nox, indique-o: FeO é óxido de ferro II e Fe₂O₃ é óxido de ferro III.</p>
+                </div>
+                <div id="ano1941" class="evento">
+                    <h4>Passo 2 - Veja o outro elemento</h4>
+                    <p>Se for um metal com Nox +1 ou +2 (Na, K, Ca, Mg), o óxido é básico. Se for um ametal (C, S, N, P), o óxido é ácido.</p>
+                </div>
+                <div id="ano1942" class="evento">
+                    <h4>Passo 3 - Anfóteros e neutros</h4>
+                    <p>Os anfóteros, como ZnO e Al₂O₃, reagem com ácidos e com bases. Os neutros, como CO, NO e N₂O, não reagem com água, ácidos nem bases.</p>
+                </div>
+                <div id="ano1944" class="evento">
+                    <h4>Passo 4 - Peróxidos e óxidos duplos</h4>
+                    <p>Nos peróxidos há a ligação O–O e o oxigênio tem Nox −1, como no H₂O₂ e no Na₂O₂. Os óxidos duplos, como o Fe₃O₄ (magnetita), equivalem à mistura de dois óxidos do mesmo elemento: FeO · Fe₂O₃.</p>
+                </div>
+            </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto Óxidos</p>
+        <p>Colégio São Luiz - unidade 3 - alunos do 3º ano do Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
